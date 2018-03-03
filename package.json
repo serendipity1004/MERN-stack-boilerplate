@@ -1,0 +1,44 @@
+{
+  "name": "react-ecommerce-materialui",
+  "version": "1.0.0",
+  "description": "React ecommerce boilerplate designed with Material UI",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/serendipity1004/react-ecommerce-materialui.git"
+  },
+  "keywords": [
+    "React",
+    "Material",
+    "UI",
+    "NodeJS",
+    "MongoDB",
+    "E-Commerce",
+    "Boilerplate"
+  ],
+  "author": "Ji Ho Choi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serendipity1004/react-ecommerce-materialui/issues"
+  },
+  "homepage": "https://github.com/serendipity1004/react-ecommerce-materialui#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.7",
+    "passport": "^0.4.0",
+    "winston": "^3.0.0-rc1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.1"
+  }
+}
