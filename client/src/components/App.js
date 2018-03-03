@@ -1,10 +1,25 @@
 import React from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-export default class App extends React.Component{
+/**
+ * Pages
+ * */
 
-    render(){
+import IndexPage from '../pages/Index';
+
+export default class App extends React.Component {
+
+    render() {
         return (
-            <div>React E-Commerce Material UI Boilerplate!!</div>
+            <div>
+                <BrowserRouter>
+                    <div>
+                        <Switch>
+                            <Route exact path="/" component={IndexPage}/>
+                        </Switch>
+                    </div>
+                </BrowserRouter>
+            </div>
         );
     }
 }
