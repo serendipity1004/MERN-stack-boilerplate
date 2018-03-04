@@ -4,6 +4,9 @@
 # Env
 .env
 
+# Node Modules
+node_modules
+
 ##Client Side
 
 # See https://help.github.com/ignore-files/ for more about ignoring files.
