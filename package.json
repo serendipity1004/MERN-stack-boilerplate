@@ -1,7 +1,7 @@
 {
-  "name": "react-ecommerce-materialui",
+  "name": "MERN-portfolio-materialui",
   "version": "1.0.0",
-  "description": "React ecommerce boilerplate designed with Material UI",
+  "description": "MERN boilerplate designed with Material UI",
   "main": "server.js",
   "scripts": {
     "test": "npm run test",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/serendipity1004/react-ecommerce-materialui.git"
+    "url": "git+ssh://git@github.com/serendipity1004/MERN-portfolio-materialui.git"
   },
   "keywords": [
     "React",
@@ -19,15 +19,14 @@
     "UI",
     "NodeJS",
     "MongoDB",
-    "E-Commerce",
     "Boilerplate"
   ],
   "author": "Ji Ho Choi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/serendipity1004/react-ecommerce-materialui/issues"
+    "url": "https://github.com/serendipity1004/MERN-portfolio-materialui/issues"
   },
-  "homepage": "https://github.com/serendipity1004/react-ecommerce-materialui#readme",
+  "homepage": "https://github.com/serendipity1004/MERN-portfolio-materialui#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
