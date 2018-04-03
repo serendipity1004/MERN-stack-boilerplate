@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import history from '../services/history';
 
 /**
  * Pages
@@ -12,7 +13,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <BrowserRouter>
+                <BrowserRouter history={history}>
                     <div>
                         <Switch>
                             <Route exact path="/" component={IndexPage}/>
