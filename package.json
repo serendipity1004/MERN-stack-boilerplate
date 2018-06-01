@@ -1,7 +1,7 @@
 {
-  "name": "MERN-portfolio-materialui",
+  "name": "Ecommerce-Demo",
   "version": "1.0.0",
-  "description": "MERN boilerplate designed with Material UI",
+  "description": "Ecommerce Demo",
   "main": "server.js",
   "scripts": {
     "test": "npm run test",
