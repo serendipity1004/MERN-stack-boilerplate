@@ -1,18 +1,24 @@
 import React from 'react';
 import {withStyles} from 'material-ui/styles';
+import PropTypes from 'prop-types';
 
-const style = theme => ({
-    root: {}
+const style = (theme) => ({
+    root: {},
 });
 
+/**
+ * Button Class
+ */
 class Button extends React.Component {
-
+    /**
+     * @return {jsx}
+     */
     render() {
-        const {classes, type} = this.props;
+        const {type} = this.props;
 
         return (
             <Button className={() => {
-                switch(type){
+                switch (type) {
                     case 'primary':
 
                         break;
@@ -23,8 +29,12 @@ class Button extends React.Component {
             }}>
 
             </Button>
-        )
+        );
     }
 }
+
+Button.propTypes = {
+    type: PropTypes.object,
+};
 
 export default withStyles(style)(Button);

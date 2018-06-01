@@ -1,19 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import Drawer from 'material-ui/Drawer';
+import {withStyles} from 'material-ui/styles';
+import Divider from 'material-ui/Divider';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
-import List from 'material-ui/List';
-import Typography from 'material-ui/Typography';
 import IconButton from 'material-ui/IconButton';
-import Hidden from 'material-ui/Hidden';
-import Divider from 'material-ui/Divider';
 import MenuIcon from 'material-ui-icons/Menu';
+import Typography from 'material-ui/Typography';
+import Hidden from 'material-ui/Hidden';
+import Drawer from 'material-ui/Drawer';
 
 const drawerWidth = 240;
 
-const styles = theme => ({
+const styles = (theme) => ({
     root: {
         flexGrow: 1,
         height: 430,
@@ -49,21 +48,27 @@ const styles = theme => ({
     },
 });
 
+/**
+ * Responsive Drawer
+ */
 class ResponsiveDrawer extends React.Component {
     state = {
         mobileOpen: false,
     };
 
     handleDrawerToggle = () => {
-        this.setState({ mobileOpen: !this.state.mobileOpen });
+        this.setState({mobileOpen: !this.state.mobileOpen});
     };
 
+    /**
+     * @return {jsx}
+     */
     render() {
         const {
             classes,
             theme,
             sidebarMenu,
-            routes } = this.props;
+            routes} = this.props;
 
         const drawer = (
             <div>
@@ -129,8 +134,8 @@ class ResponsiveDrawer extends React.Component {
 ResponsiveDrawer.propTypes = {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
-    // sidebarMenu:PropTypes.func.isRequired,
-    // routes:PropTypes.func.isRequired
+    sidebarMenu: PropTypes.func.isRequired,
+    routes: PropTypes.func.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(ResponsiveDrawer);
+export default withStyles(styles, {withTheme: true})(ResponsiveDrawer);

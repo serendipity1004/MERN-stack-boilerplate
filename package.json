@@ -7,7 +7,8 @@
     "test": "npm run test",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "lint": "eslint ./ --fix"
   },
   "repository": {
     "type": "git",
@@ -37,7 +38,11 @@
     "winston": "^3.0.0-rc1"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
     "concurrently": "^3.5.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-react": "^7.8.2",
     "nodemon": "^1.17.1"
   }
 }

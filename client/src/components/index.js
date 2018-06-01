@@ -20,5 +20,5 @@ import Banner from './TextContainer/Banner';
 export {
     ResponsiveDrawer,
     ProgressCarousel,
-    Banner
-}
+    Banner,
+};

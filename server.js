@@ -1,11 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const expressSession = require('express-session');
-const passport = require('passport');
 const bodyParser = require('body-parser');
-const envResult = require('dotenv').config();
 const {createLogger, format, transports} = require('winston');
-const {combine, timestamp, label, prettyPrint} = format;
+const {combine, timestamp, prettyPrint} = format;
 const CONFIGS = process.env.ENV === 'prod' ?
     require('./configs/production') :
     process.env.ENV === 'dev' ?
@@ -21,7 +19,7 @@ const logger = createLogger({
         timestamp(),
         prettyPrint()
     ),
-    transports: [new transports.Console()]
+    transports: [new transports.Console()],
 });
 
 const app = express();
@@ -43,11 +41,11 @@ app.use(expressSession({
     cookie: process.env.ENV === 'prod' ?
         {
             secure: true,
-            maxAge: CONFIGS.SESSION_LIFE
+            maxAge: CONFIGS.SESSION_LIFE,
         } :
         {
-            maxAge: CONFIGS.SESSION_LIFE
-        }
+            maxAge: CONFIGS.SESSION_LIFE,
+        },
 }));
 
 /**

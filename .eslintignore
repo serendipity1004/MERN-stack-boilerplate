@@ -1,0 +1,5 @@
+# NodeJS ignores
+node_modules
+
+# React ignores
+client/src/registerServiceWorker.js

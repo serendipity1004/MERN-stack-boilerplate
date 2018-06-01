@@ -2,17 +2,23 @@ import React from 'react';
 import {withStyles} from 'material-ui/styles';
 import {ProgressCarousel} from '../../components';
 
-const styles = theme => ({
-    root: {}
+const styles = (theme) => ({
+    root: {},
 });
 
+/**
+ * Root
+ */
 class Root extends React.Component {
+    /**
+     * @return {jsx}
+     */
     render() {
         return (
             <div>
                 <ProgressCarousel/>
             </div>
-        )
+        );
     }
 }
 
