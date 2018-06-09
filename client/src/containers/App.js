@@ -2,7 +2,7 @@ import React from 'react';
 import {Router, Route, Switch} from 'react-router-dom';
 import history from '../services/history';
 import {mainRoutes} from '../routes';
-import Reboot from 'material-ui/Reboot';
+import Reboot from '@material-ui/core/Reboot';
 
 /**
  * Pages
