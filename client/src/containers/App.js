@@ -2,7 +2,7 @@ import React from 'react';
 import {Router, Route, Switch} from 'react-router-dom';
 import history from '../services/history';
 import {mainRoutes} from '../routes';
-import Reboot from '@material-ui/core/Reboot';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 /**
  * Pages
@@ -28,7 +28,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <Reboot/>
+                <CssBaseline/>
                 <Router history={history}>
                     {mainSwitch}
                 </Router>
