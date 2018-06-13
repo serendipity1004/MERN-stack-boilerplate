@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const expressSession = require('express-session');
@@ -53,4 +54,5 @@ app.use(expressSession({
  * */
 app.listen(CONFIGS.PORT, () => {
     logger.info(`Server Running at PORT : ${CONFIGS.PORT}`);
+    logger.info(`Under ${process.env.ENV} condition`);
 });
