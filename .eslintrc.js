@@ -19,5 +19,6 @@ module.exports = {
         "max-len":0,
         "no-invalid-this":0,
         "babel/no-invalid-this":1,
+        "react/jsx-max-props-per-line":2
     }
 };
