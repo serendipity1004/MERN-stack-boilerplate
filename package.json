@@ -29,9 +29,9 @@
   },
   "homepage": "https://github.com/serendipity1004/MERN-portfolio-materialui#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.20.4",
     "dotenv": "^5.0.1",
-    "express": "^4.16.2",
+    "express": "^4.22.1",
     "express-session": "^1.15.6",
     "mongoose": "^5.0.7",
     "passport": "^0.4.0",
